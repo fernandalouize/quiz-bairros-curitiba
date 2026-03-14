@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz dos Bairros de Curitiba</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="prompt">Carregando...</div>
+  <div id="map"></div>
+
+  <div id="overlay">
+    <div id="overlay-box">
+      <h2>Parabéns! Você completou o mapa!</h2>
+      <p class="stat">Média de tentativas por bairro: <span id="stat-avg">-</span></p>
+      <p class="stat">Tempo total: <span id="stat-time">-</span></p>
+      <button id="restart-btn">Jogar novamente</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
